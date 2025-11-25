@@ -1,0 +1,74 @@
+{
+  "header": {
+    "toggleSidebar": "Seitenleiste umschalten",
+    "toggleTheme": "Dunkelmodus umschalten",
+    "selectLanguage": "Sprache auswählen"
+  },
+  "sidebar": {
+    "navigation": "Navigation",
+    "search": "Suchen..."
+  },
+  "toc": {
+    "title": "Auf Dieser Seite"
+  },
+  "footer": {
+    "madeWith": "Erstellt mit",
+    "by": "von"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português"
+  },
+  "hero": {
+    "badge": "Erstellt mit React + Vite",
+    "title": "Dokumentation",
+    "titleGradient": "In Ihrem eigenen Tempo",
+    "subtitle": "Entspannen Sie sich. Wir kümmern uns um Ihre Docs. Erstellen Sie professionelle Dokumentationsseiten mit Markdown, benutzerdefinierten Komponenten und elegantem Design.",
+    "cta": {
+      "start": "Loslegen",
+      "quickGuide": "Schnellstart"
+    },
+    "features": {
+      "title": "Alles was Sie brauchen",
+      "subtitle": "Moderne Funktionen für die beste Dokumentationserfahrung",
+      "items": {
+        "docs": {
+          "title": "Klare Dokumentation",
+          "description": "Organisieren Sie Ihre Inhalte intuitiv mit Markdown und MDX."
+        },
+        "fast": {
+          "title": "Super Schnell",
+          "description": "Sofortige Navigation ohne Seitenneuladungen."
+        },
+        "syntax": {
+          "title": "Syntax-Hervorhebung",
+          "description": "Codeblöcke mit Farben und Syntax-Hervorhebung."
+        },
+        "search": {
+          "title": "Leistungsstarke Suche",
+          "description": "Finden Sie jeden Inhalt in Sekunden."
+        },
+        "themes": {
+          "title": "Anpassbare Themes",
+          "description": "Hell- und Dunkelmodus mit einzigartigen Farbpaletten."
+        },
+        "i18n": {
+          "title": "Mehrsprachig",
+          "description": "Vollständige Internationalisierungsunterstützung."
+        }
+      }
+    },
+    "footer": {
+      "madeWith": "Mit ❤️ erstellt von",
+      "docs": "Dokumentation",
+      "github": "GitHub"
+    },
+        "starCta": {
+      "text": "War das hilfreich?",
+      "action": "Gib uns einen Stern auf GitHub"
+    }
+  }
+}

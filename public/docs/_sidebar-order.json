@@ -1,0 +1,37 @@
+{
+  "order": [
+    "getting-started",
+    "customization",
+    "writing",
+    "advanced"
+  ],
+  "fileOrder": {
+    "getting-started": [
+      "introduction",
+      "installation",
+      "quick-start"
+    ],
+    "customization": [
+      "configuration",
+      "logo",
+      "navbar",
+      "sidebar",
+      "themes",
+      "branding",
+      "dark-mode",
+      "auto-sidebar",
+      "complete-configuration"
+    ],
+    "writing": [
+      "markdown",
+      "frontmatter",
+      "organizing"
+    ],
+    "advanced": [
+      "navigation",
+      "search",
+      "seo",
+      "mdx-components"
+    ]
+  }
+}

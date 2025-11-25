@@ -1,0 +1,11 @@
+# robots.txt for LazyDocs
+# Allow all search engines to crawl all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Optional: Crawl-delay for respectful bots
+# Crawl-delay: 10

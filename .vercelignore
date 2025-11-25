@@ -1,0 +1,48 @@
+# Vercel Ignore - Files and directories to exclude from deployment
+
+# Development files
+README.md
+DEPLOY.md
+LICENSE
+
+# IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Environment files (use Vercel dashboard for env vars)
+.env
+.env.local
+.env.*.local
+
+# Dependencies (Vercel installs from package.json)
+node_modules
+
+# Build output (Vercel builds fresh)
+dist
+build
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files (if any)
+**/*.test.js
+**/*.test.jsx
+**/*.spec.js
+**/*.spec.jsx
+__tests__
+coverage

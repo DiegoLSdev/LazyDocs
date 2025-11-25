@@ -1,0 +1,74 @@
+{
+  "header": {
+    "toggleSidebar": "Toggle sidebar",
+    "toggleTheme": "Toggle dark mode",
+    "selectLanguage": "Select language"
+  },
+  "sidebar": {
+    "navigation": "Navigation",
+    "search": "Search..."
+  },
+  "toc": {
+    "title": "On This Page"
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "by": "by"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português"
+  },
+  "hero": {
+    "badge": "Built with React + Vite",
+    "title": "Documentation",
+    "titleGradient": "At your own pace",
+    "subtitle": "Relax. We've got your docs. Create professional documentation sites with markdown, custom components, and an elegant design.",
+    "cta": {
+      "start": "Get Started",
+      "quickGuide": "Quick Guide"
+    },
+    "features": {
+      "title": "Everything you need",
+      "subtitle": "Modern features to create the best documentation experience",
+      "items": {
+        "docs": {
+          "title": "Clear Documentation",
+          "description": "Organize your content intuitively with markdown and MDX."
+        },
+        "fast": {
+          "title": "Super Fast",
+          "description": "Instant navigation without page reloads."
+        },
+        "syntax": {
+          "title": "Syntax Highlighting",
+          "description": "Code blocks with colors and syntax highlighting."
+        },
+        "search": {
+          "title": "Powerful Search",
+          "description": "Find any content in seconds."
+        },
+        "themes": {
+          "title": "Customizable Themes",
+          "description": "Light and dark mode with unique color palettes."
+        },
+        "i18n": {
+          "title": "Multi-language",
+          "description": "Full internationalization support."
+        }
+      }
+    },
+    "footer": {
+      "madeWith": "Made with ❤️ by",
+      "docs": "Documentation",
+      "github": "GitHub"
+    },
+        "starCta": {
+      "text": "Was this helpful?",
+      "action": "Give us a star on GitHub"
+    }
+  }
+}

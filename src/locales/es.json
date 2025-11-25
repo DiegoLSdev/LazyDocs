@@ -1,0 +1,95 @@
+{
+  "header": {
+    "toggleSidebar": "Alternar barra lateral",
+    "toggleTheme": "Alternar modo oscuro",
+    "selectLanguage": "Seleccionar idioma"
+  },
+  "sidebar": {
+    "navigation": "Navegación",
+    "search": "Buscar..."
+  },
+  "toc": {
+    "title": "En Esta Página"
+  },
+  "footer": {
+    "madeWith": "Hecho con",
+    "by": "por"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português"
+  },
+  "hero": {
+    "badge": "Construido con React + Vite",
+    "title": "Documentación",
+    "titleGradient": "Eficientemente Relajada",
+    "subtitle": "Relájate. Nosotros nos encargamos de tus docs. Crea sitios de documentación profesionales con markdown, componentes personalizados y un diseño elegante.",
+    "cta": {
+      "start": "Empezar",
+      "quickGuide": "Guía Rápida"
+    },
+    "stats": {
+      "markdown": "Markdown",
+      "navigation": "Navegación",
+      "possibilities": "Posibilidades"
+    },
+    "features": {
+      "title": "Todo lo que necesitas",
+      "subtitle": "Características modernas para crear la mejor experiencia de documentación",
+      "items": {
+        "docs": {
+          "title": "Documentación Clara",
+          "description": "Organiza tu contenido de forma intuitiva con markdown y MDX."
+        },
+        "fast": {
+          "title": "Súper Rápido",
+          "description": "Navegación instantánea sin recargas de página."
+        },
+        "syntax": {
+          "title": "Syntax Highlighting",
+          "description": "Bloques de código con colores y resaltado de sintaxis."
+        },
+        "search": {
+          "title": "Búsqueda Potente",
+          "description": "Encuentra cualquier contenido en segundos."
+        },
+        "themes": {
+          "title": "Temas Personalizables",
+          "description": "Modo claro y oscuro con paletas de colores únicas."
+        },
+        "i18n": {
+          "title": "Multi-idioma",
+          "description": "Soporte completo para internacionalización."
+        }
+      }
+    },
+    "codePreview": {
+      "title": "Escribe en Markdown",
+      "example": {
+        "heading": "Tu Documentación",
+        "subheading": "Fácil de escribir",
+        "text": "Usa **markdown** para crear contenido ",
+        "highlight": "hermoso",
+        "content": "."
+      }
+    },
+    "cta2": {
+      "title": "¿Listo para empezar?",
+      "subtitle": "Comienza a crear tu documentación en minutos. Es gratis, de código abierto y fácil de personalizar.",
+      "installation": "Ver Instalación",
+      "github": "Ver en GitHub"
+    },
+    "footer": {
+      "madeWith": "Hecho con ❤️ por",
+      "docs": "Documentación",
+      "github": "GitHub"
+    },
+    "starCta": {
+      "text": "¿Te fue útil?",
+      "action": "Danos una estrella en GitHub"
+    }
+  }
+}

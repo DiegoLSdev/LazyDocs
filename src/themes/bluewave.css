@@ -1,0 +1,466 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode - Ocean Blue/Sky scheme */
+    --background: 210 40% 98%;
+    --foreground: 220 20% 10%;
+    --card: 210 40% 98%;
+    --card-foreground: 220 20% 10%;
+    --popover: 210 40% 98%;
+    --popover-foreground: 220 20% 10%;
+    --primary: 220 35% 18%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 30% 92%;
+    --secondary-foreground: 220 35% 18%;
+    --muted: 210 30% 92%;
+    --muted-foreground: 215 15% 50%;
+    --accent: 210 30% 92%;
+    --accent-foreground: 220 35% 18%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 25% 88%;
+    --input: 210 25% 88%;
+    --ring: 220 20% 10%;
+    --radius: 0.5rem;
+
+    /* Sidebar variables */
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 220 20% 10%;
+    --sidebar-primary: 220 35% 18%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 30% 92%;
+    --sidebar-accent-foreground: 220 35% 18%;
+    --sidebar-border: 210 25% 88%;
+    --sidebar-ring: 220 20% 10%;
+
+    /* Syntax Highlighting - Light Mode (Cool Ocean colors) */
+    --code-background: 240 250 255; /* Sky-50 - fondo muy claro azulado */
+    --code-text: 30 41 59; /* Slate-800 - texto principal */
+    --code-comment: 100 116 139; /* Slate-500 - comentarios */
+    --code-keyword: 29 78 216; /* Blue-700 - palabras clave */
+    --code-string: 21 128 61; /* Green-700 - strings */
+    --code-function: 37 99 235; /* Blue-600 - nombres de funciones */
+    --code-number: 220 38 38; /* Red-700 - números */
+    --code-operator: 71 85 105; /* Slate-600 - operadores */
+    --code-punctuation: 51 65 85; /* Slate-700 - puntuación */
+    --code-variable: 14 165 233; /* Sky-500 - variables */
+    --code-class: 139 92 246; /* Violet-500 - clases */
+    --code-tag: 6 182 212; /* Cyan-600 - tags HTML */
+    --code-attribute: 5 150 105; /* Emerald-600 - atributos */
+    --code-builtin: 8 145 178; /* Cyan-700 - funciones builtin */
+  }
+
+  .dark {
+    /* Dark mode - Deep Ocean/Night scheme */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 200 70% 60%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 32% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 217 91% 60%;
+
+    /* Sidebar dark mode */
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 217 32% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 32% 17%;
+    --sidebar-ring: 217 91% 60%;
+
+    /* Syntax Highlighting - Dark Mode (Deep Ocean colors) */
+    --code-background: 15 23 42; /* Slate-900 - fondo oscuro azulado */
+    --code-text: 248 250 252; /* Slate-50 - texto claro */
+    --code-comment: 148 163 184; /* Slate-400 - comentarios */
+    --code-keyword: 96 165 250; /* Blue-400 - palabras clave azul brillante */
+    --code-string: 134 239 172; /* Green-300 - strings verde menta */
+    --code-function: 147 197 253; /* Blue-300 - funciones azul claro */
+    --code-number: 252 165 165; /* Red-300 - números rosa/rojo */
+    --code-operator: 203 213 225; /* Slate-300 - operadores */
+    --code-punctuation: 226 232 240; /* Slate-200 - puntuación clara */
+    --code-variable: 125 211 252; /* Sky-300 - variables celeste */
+    --code-class: 196 181 253; /* Violet-300 - clases púrpura */
+    --code-tag: 103 232 249; /* Cyan-300 - tags HTML cyan */
+    --code-attribute: 110 231 183; /* Emerald-300 - atributos verde agua */
+    --code-builtin: 34 211 238; /* Cyan-400 - builtin cyan brillante */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* ============================================
+     Markdown Styles (.prose)
+     ============================================ */
+  .prose {
+    @apply max-w-none text-foreground;
+  }
+
+  .prose h1 {
+    @apply text-4xl font-bold mt-8 mb-4 text-foreground border-b pb-2 border-border;
+  }
+
+  .prose h2 {
+    @apply text-3xl font-semibold mt-6 mb-3 text-foreground;
+  }
+
+  .prose h3 {
+    @apply text-2xl font-semibold mt-5 mb-2 text-foreground;
+  }
+
+  .prose h4 {
+    @apply text-xl font-semibold mt-4 mb-2 text-foreground;
+  }
+
+  .prose h5 {
+    @apply text-lg font-semibold mt-3 mb-2 text-foreground;
+  }
+
+  .prose h6 {
+    @apply text-base font-semibold mt-3 mb-2 text-foreground;
+  }
+
+  .prose p {
+    @apply my-4 leading-7;
+  }
+
+  .prose a {
+    @apply text-primary underline-offset-4 hover:underline transition-colors;
+  }
+
+  .prose strong {
+    @apply font-semibold text-foreground;
+  }
+
+  /* Código inline - aparece dentro de texto normal */
+  .prose code {
+    @apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-foreground;
+  }
+
+  /* Bloques de código - estos NO se usan porque CodeBlock.jsx los maneja */
+  /* Los dejamos aquí como fallback por si acaso */
+  .prose pre {
+    @apply my-0 overflow-visible rounded-lg bg-transparent p-0 shadow-none border-0;
+  }
+
+  .prose pre code {
+    @apply bg-transparent p-0 text-sm;
+  }
+
+  .prose ul {
+    @apply my-4 ml-6 list-disc;
+  }
+
+  .prose ol {
+    @apply my-4 ml-6 list-decimal;
+  }
+
+  .prose li {
+    @apply mt-2;
+  }
+
+  .prose blockquote {
+    @apply mt-6 border-l-4 border-primary pl-6 italic text-muted-foreground;
+  }
+
+  .prose table {
+    @apply w-full border-collapse my-4;
+  }
+
+  .prose th {
+    @apply border border-border bg-muted px-4 py-2 text-left font-semibold;
+  }
+
+  .prose td {
+    @apply border border-border px-4 py-2;
+  }
+
+  .prose img {
+    @apply rounded-lg my-4;
+  }
+
+  .prose hr {
+    @apply my-8 border-border;
+  }
+
+  /* ============================================
+     Syntax Highlighting (para CodeBlock.jsx)
+     ============================================ */
+  
+  /* Base del código */
+  .code-block pre[class*="language-"] {
+    color: rgb(var(--code-text));
+    background: rgb(var(--code-background));
+  }
+
+  .code-block code[class*="language-"] {
+    color: rgb(var(--code-text));
+    background: transparent;
+  }
+
+  /* Comentarios */
+  .code-block .token.comment,
+  .code-block .token.prolog,
+  .code-block .token.doctype,
+  .code-block .token.cdata {
+    color: rgb(var(--code-comment));
+    font-style: italic;
+  }
+
+  /* Palabras clave (const, let, function, class, if, return, etc.) */
+  .code-block .token.keyword,
+  .code-block .token.control,
+  .code-block .token.directive,
+  .code-block .token.unit,
+  .code-block .token.statement,
+  .code-block .token.regex,
+  .code-block .token.atrule {
+    color: rgb(var(--code-keyword));
+    font-weight: 600;
+  }
+
+  /* Strings y caracteres */
+  .code-block .token.string,
+  .code-block .token.attr-value,
+  .code-block .token.char {
+    color: rgb(var(--code-string));
+  }
+
+  /* Nombres de funciones */
+  .code-block .token.function,
+  .code-block .token.function-name,
+  .code-block .token.method,
+  .code-block .token.function-variable {
+    color: rgb(var(--code-function));
+  }
+
+  /* Números, booleanos, constantes */
+  .code-block .token.number,
+  .code-block .token.boolean,
+  .code-block .token.constant {
+    color: rgb(var(--code-number));
+  }
+
+  /* Operadores */
+  .code-block .token.operator,
+  .code-block .token.entity,
+  .code-block .token.url {
+    color: rgb(var(--code-operator));
+  }
+
+  /* Puntuación (paréntesis, llaves, etc.) */
+  .code-block .token.punctuation {
+    color: rgb(var(--code-punctuation));
+  }
+
+  /* Variables y propiedades */
+  .code-block .token.variable,
+  .code-block .token.property,
+  .code-block .token.property-access {
+    color: rgb(var(--code-variable));
+  }
+
+  /* Nombres de clases */
+  .code-block .token.class-name,
+  .code-block .token.type-class-name,
+  .code-block .token.maybe-class-name {
+    color: rgb(var(--code-class));
+  }
+
+  /* Tags HTML */
+  .code-block .token.tag {
+    color: rgb(var(--code-tag));
+  }
+
+  /* Atributos HTML */
+  .code-block .token.attr-name,
+  .code-block .token.namespace {
+    color: rgb(var(--code-attribute));
+  }
+
+  /* Funciones builtin (console, Math, etc.) */
+  .code-block .token.builtin,
+  .code-block .token.symbol {
+    color: rgb(var(--code-builtin));
+  }
+
+  /* Texto importante */
+  .code-block .token.important,
+  .code-block .token.bold {
+    font-weight: bold;
+  }
+
+  .code-block .token.italic {
+    font-style: italic;
+  }
+
+  /* Números de línea */
+  .code-block .linenumber {
+    color: rgb(var(--code-comment));
+    opacity: 0.5;
+    user-select: none;
+  }
+
+  /* Deleted/Inserted (para diffs) */
+  .code-block .token.deleted {
+    color: rgb(var(--code-tag));
+    background: rgba(220, 38, 38, 0.1);
+  }
+
+  .code-block .token.inserted {
+    color: rgb(var(--code-string));
+    background: rgba(21, 128, 61, 0.1);
+  }
+}
+
+/* ============================================
+   Floating 3D Cards Styles
+   ============================================ */
+@layer utilities {
+  .perspective-\[1200px\] {
+    perspective: 1200px;
+  }
+
+  .perspective-\[1500px\] {
+    perspective: 1500px;
+  }
+
+  .perspective-\[2000px\] {
+    perspective: 2000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .shadow-3xl {
+    box-shadow: 
+      0 25px 50px -12px rgba(0, 0, 0, 0.25),
+      0 10px 20px -5px rgba(0, 0, 0, 0.15),
+      0 0 100px -20px rgba(0, 0, 0, 0.1);
+  }
+
+  .transition-3d {
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                z-index 0s;
+  }
+
+  .delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .delay-2000 {
+    animation-delay: 2s;
+  }
+}
+
+/* ============================================
+   Custom Loading Animations
+   ============================================ */
+@keyframes pulse-height {
+  0%, 100% {
+    transform: scaleY(0.5);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(24px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(24px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-reverse {
+  0% {
+    transform: rotate(360deg) translateX(24px) rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg) translateX(24px) rotate(0deg);
+  }
+}
+
+@keyframes flip-page {
+  0%, 100% {
+    transform: rotateY(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: rotateY(180deg);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-pulse-height {
+  animation: pulse-height 1.2s ease-in-out infinite;
+}
+
+.animate-orbit {
+  animation: orbit 2s linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbit-reverse 2s linear infinite;
+}
+
+.animate-flip-page {
+  animation: flip-page 1.5s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+}

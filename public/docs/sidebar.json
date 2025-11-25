@@ -1,0 +1,120 @@
+[
+  {
+    "type": "folder",
+    "title": "Getting Started",
+    "path": "/docs/getting-started",
+    "children": [
+      {
+        "type": "file",
+        "title": "Installation",
+        "path": "/docs/getting-started/installation"
+      },
+      {
+        "type": "file",
+        "title": "Quick Start",
+        "path": "/docs/getting-started/quick-start"
+      },
+      {
+        "type": "file",
+        "title": "Welcome to LazyDocs",
+        "path": "/docs/getting-started/introduction"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "title": "Customization",
+    "path": "/docs/customization",
+    "children": [
+      {
+        "type": "file",
+        "title": "Automatic Sidebar Generation",
+        "path": "/docs/customization/auto-sidebar"
+      },
+      {
+        "type": "file",
+        "title": "Complete Branding Guide",
+        "path": "/docs/customization/branding"
+      },
+      {
+        "type": "file",
+        "title": "Configuration Guide",
+        "path": "/docs/customization/configuration"
+      },
+      {
+        "type": "file",
+        "title": "Dark Mode",
+        "path": "/docs/customization/dark-mode"
+      },
+      {
+        "type": "file",
+        "title": "Logo & Branding",
+        "path": "/docs/customization/logo"
+      },
+      {
+        "type": "file",
+        "title": "Navbar Customization",
+        "path": "/docs/customization/navbar"
+      },
+      {
+        "type": "file",
+        "title": "Sidebar Organization",
+        "path": "/docs/customization/sidebar"
+      },
+      {
+        "type": "file",
+        "title": "Themes & Colors",
+        "path": "/docs/customization/themes"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "title": "Writing",
+    "path": "/docs/writing",
+    "children": [
+      {
+        "type": "file",
+        "title": "Frontmatter",
+        "path": "/docs/writing/frontmatter"
+      },
+      {
+        "type": "file",
+        "title": "Markdown Guide",
+        "path": "/docs/writing/markdown"
+      },
+      {
+        "type": "file",
+        "title": "Organizing Content",
+        "path": "/docs/writing/organizing"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "title": "Advanced",
+    "path": "/docs/advanced",
+    "children": [
+      {
+        "type": "file",
+        "title": "Advanced Search System",
+        "path": "/docs/advanced/search"
+      },
+      {
+        "type": "file",
+        "title": "Enhanced Navigation",
+        "path": "/docs/advanced/navigation"
+      },
+      {
+        "type": "file",
+        "title": "Interactive MDX Components",
+        "path": "/docs/advanced/mdx-components"
+      },
+      {
+        "type": "file",
+        "title": "SEO Optimization",
+        "path": "/docs/advanced/seo"
+      }
+    ]
+  }
+]

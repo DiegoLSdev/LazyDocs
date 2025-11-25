@@ -1,0 +1,40 @@
+{
+  "siteName": "LazyDocs",
+  "tagline": "Create beautiful documentation with ease",
+  "logo": {
+    "light": "/logo.png",
+    "dark": "/logo.png" 
+  },
+  "title": {
+    "light": "/title-light.png",
+    "dark": "/title-dark.png"
+  },
+  "favicon": "/favicon.ico",
+  "colorTheme": "brownie",
+  "navbar": {
+    "links": [
+      {
+        "label": "Docs",
+        "to": "/docs/getting-started/introduction"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/DiegoLSdev/LazyDocs"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 LazyDocs. Built with ❤️",
+    "links": [
+      {
+        "label": "Documentation",
+        "to": "/docs"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/DiegoLSdev/LazyDocs"
+      }
+    ]
+  },
+  "docsPath": "docs"
+}

@@ -1,0 +1,74 @@
+{
+  "header": {
+    "toggleSidebar": "Alternar barra lateral",
+    "toggleTheme": "Alternar modo escuro",
+    "selectLanguage": "Selecionar idioma"
+  },
+  "sidebar": {
+    "navigation": "Navegação",
+    "search": "Pesquisar..."
+  },
+  "toc": {
+    "title": "Nesta Página"
+  },
+  "footer": {
+    "madeWith": "Feito com",
+    "by": "por"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português"
+  },
+  "hero": {
+    "badge": "Construído com React + Vite",
+    "title": "Documentação",
+    "titleGradient": "No seu próprio ritmo",
+    "subtitle": "Relaxe. Nós cuidamos dos seus docs. Crie sites de documentação profissionais com markdown, componentes personalizados e um design elegante.",
+    "cta": {
+      "start": "Começar",
+      "quickGuide": "Guia Rápido"
+    },
+    "features": {
+      "title": "Tudo que você precisa",
+      "subtitle": "Recursos modernos para criar a melhor experiência de documentação",
+      "items": {
+        "docs": {
+          "title": "Documentação Clara",
+          "description": "Organize seu conteúdo intuitivamente com markdown e MDX."
+        },
+        "fast": {
+          "title": "Super Rápido",
+          "description": "Navegação instantânea sem recarregar a página."
+        },
+        "syntax": {
+          "title": "Destaque de Sintaxe",
+          "description": "Blocos de código com cores e destaque de sintaxe."
+        },
+        "search": {
+          "title": "Busca Poderosa",
+          "description": "Encontre qualquer conteúdo em segundos."
+        },
+        "themes": {
+          "title": "Temas Personalizáveis",
+          "description": "Modo claro e escuro com paletas de cores únicas."
+        },
+        "i18n": {
+          "title": "Multi-idioma",
+          "description": "Suporte completo para internacionalização."
+        }
+      }
+    },
+    "footer": {
+      "madeWith": "Feito com ❤️ por",
+      "docs": "Documentação",
+      "github": "GitHub"
+    },
+    "starCta": {
+      "text": "Isso foi útil?",
+      "action": "Dê-nos uma estrela no GitHub"
+    }
+  }
+}

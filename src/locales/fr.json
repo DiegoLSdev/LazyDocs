@@ -1,0 +1,74 @@
+{
+  "header": {
+    "toggleSidebar": "Basculer la barre latérale",
+    "toggleTheme": "Basculer le mode sombre",
+    "selectLanguage": "Sélectionner la langue"
+  },
+  "sidebar": {
+    "navigation": "Navigation",
+    "search": "Rechercher..."
+  },
+  "toc": {
+    "title": "Sur Cette Page"
+  },
+  "footer": {
+    "madeWith": "Fait avec",
+    "by": "par"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português"
+  },
+  "hero": {
+    "badge": "Construit avec React + Vite",
+    "title": "Documentation",
+    "titleGradient": "À votre rythme",
+    "subtitle": "Détendez-vous. Nous nous occupons de vos docs. Créez des sites de documentation professionnels avec markdown, des composants personnalisés et un design élégant.",
+    "cta": {
+      "start": "Commencer",
+      "quickGuide": "Guide Rapide"
+    },
+    "features": {
+      "title": "Tout ce dont vous avez besoin",
+      "subtitle": "Fonctionnalités modernes pour créer la meilleure expérience de documentation",
+      "items": {
+        "docs": {
+          "title": "Documentation Claire",
+          "description": "Organisez votre contenu de manière intuitive avec markdown et MDX."
+        },
+        "fast": {
+          "title": "Super Rapide",
+          "description": "Navigation instantanée sans rechargement de page."
+        },
+        "syntax": {
+          "title": "Coloration Syntaxique",
+          "description": "Blocs de code avec couleurs et mise en évidence de la syntaxe."
+        },
+        "search": {
+          "title": "Recherche Puissante",
+          "description": "Trouvez n'importe quel contenu en quelques secondes."
+        },
+        "themes": {
+          "title": "Thèmes Personnalisables",
+          "description": "Mode clair et sombre avec des palettes de couleurs uniques."
+        },
+        "i18n": {
+          "title": "Multilingue",
+          "description": "Support complet de l'internationalisation."
+        }
+      }
+    },
+    "footer": {
+      "madeWith": "Fait avec ❤️ par",
+      "docs": "Documentation",
+      "github": "GitHub"
+    },
+    "starCta": {
+      "text": "Cela vous a-t-il aidé?",
+      "action": "Donnez-nous une étoile sur GitHub"
+    }
+  }
+}

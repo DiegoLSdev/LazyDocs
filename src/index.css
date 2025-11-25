@@ -1,0 +1,55 @@
+/* -------------------------
+   FloatingCards3D - Variables globales (usar por tema)
+   -------------------------*/
+:root{
+  /* Valores por defecto (light baseline) */
+  --fc-depth: 120px;            /* distancia Z por paso (positivo -> hacia cámara) */
+  --fc-rotate: 4deg;            /* rotación por paso */
+  --fc-saturation: 1;           /* saturación general */
+  --fc-brightness: 1;           /* brillo general */
+  --fc-glow: 220 40% 60%;       /* H S% L% para glow (hsla via var) */
+  --fc-shadow-opacity: 0.18;    /* opacidad multiplicadora para sombras */
+  --fc-gap-x: 6px;              /* leve desplazamiento X por paso para _stack_ */
+  --fc-gap-y: -8px;             /* desplazamiento Y por paso (apilar hacia arriba) */
+  --fc-edge-blend: 0.06;        /* borde suave */
+}
+
+/* Ejemplo: dark tweak */
+.dark{
+  --fc-depth: 160px;
+  --fc-rotate: 8deg;
+  --fc-saturation: 1.06;
+  --fc-brightness: 1.05;
+  --fc-glow: 40 90% 85%;
+  --fc-shadow-opacity: 0.40;
+  --fc-gap-x: 10px;
+  --fc-gap-y: -12px;
+}
+
+/* Ejemplo: tema ocean */
+.theme-ocean{
+  --fc-depth: 180px;
+  --fc-rotate: 10deg;
+  --fc-saturation: 1.18;
+  --fc-brightness: 1.06;
+  --fc-glow: 200 85% 60%;
+  --fc-shadow-opacity: 0.34;
+  --fc-gap-x: 12px;
+  --fc-gap-y: -14px;
+}
+
+/* Utilidades necesarias (una sola vez) */
+.perspective-\[2000px\] { perspective: 2000px; }
+.preserve-3d { transform-style: preserve-3d; }
+
+/* Optional: glow helper para overlay atmosférico */
+.fc-glow {
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+  filter: blur(48px);
+  opacity: 0.45;
+  mix-blend-mode: screen;
+  background: radial-gradient(circle at 20% 20%, hsl(var(--fc-glow) / 0.55) 0%, transparent 40%),
+              radial-gradient(circle at 80% 80%, hsl(var(--fc-glow) / 0.25) 0%, transparent 30%);
+}

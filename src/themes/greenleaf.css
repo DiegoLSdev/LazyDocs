@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode - Fresh Green/Sage scheme */
+    --background: 120 40% 98%;
+    --foreground: 140 20% 8%;
+    --card: 120 40% 98%;
+    --card-foreground: 140 20% 8%;
+    --popover: 120 40% 98%;
+    --popover-foreground: 140 20% 8%;
+    --primary: 140 25% 15%;
+    --primary-foreground: 120 30% 97%;
+    --secondary: 120 25% 90%;
+    --secondary-foreground: 140 25% 15%;
+    --muted: 120 25% 90%;
+    --muted-foreground: 130 10% 45%;
+    --accent: 120 25% 90%;
+    --accent-foreground: 140 25% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 120 30% 97%;
+    --border: 120 20% 85%;
+    --input: 120 20% 85%;
+    --ring: 140 20% 8%;
+    --radius: 0.5rem;
+
+    /* Sidebar variables */
+    --sidebar-background: 120 40% 98%;
+    --sidebar-foreground: 140 20% 8%;
+    --sidebar-primary: 140 25% 15%;
+    --sidebar-primary-foreground: 120 30% 97%;
+    --sidebar-accent: 120 25% 90%;
+    --sidebar-accent-foreground: 140 25% 15%;
+    --sidebar-border: 120 20% 85%;
+    --sidebar-ring: 140 20% 8%;
+
+    /* Code syntax highlighting - Light Mode (HSL format convertido a RGB) */
+    --code-background: 240 249 237; /* hsl(120 20% 95%) → rgb */
+    --code-text: 15 41 19; /* hsl(140 20% 8%) → rgb */
+    --code-comment: 115 128 115; /* hsl(130 10% 50%) → rgb */
+    --code-punctuation: 66 89 66; /* hsl(135 15% 35%) → rgb */
+    --code-variable: 51 133 115; /* hsl(180 35% 45%) → rgb */
+    --code-tag: 31 107 56; /* hsl(150 60% 35%) → rgb */
+    --code-number: 153 184 51; /* hsl(80 70% 45%) → rgb */
+    --code-string: 51 128 102; /* hsl(160 50% 40%) → rgb */
+    --code-operator: 51 133 115; /* hsl(180 35% 45%) → rgb */
+    --code-keyword: 102 153 51; /* hsl(100 60% 40%) → rgb */
+    --code-function: 41 158 107; /* hsl(140 55% 40%) → rgb */
+    --code-class: 41 158 107; /* hsl(140 55% 40%) → rgb */
+    --code-attribute: 51 128 102; /* hsl(160 50% 40%) → rgb */
+    --code-builtin: 51 128 102; /* hsl(160 50% 40%) → rgb */
+  }
+
+  .dark {
+    /* Dark mode - Deep Forest/Moss scheme */
+    --background: 140 20% 8%;
+    --foreground: 120 30% 97%;
+    --card: 140 20% 8%;
+    --card-foreground: 120 30% 97%;
+    --popover: 140 20% 8%;
+    --popover-foreground: 120 30% 97%;
+    --primary: 120 50% 65%;
+    --primary-foreground: 140 25% 10%;
+    --secondary: 135 15% 15%;
+    --secondary-foreground: 120 30% 97%;
+    --muted: 135 15% 15%;
+    --muted-foreground: 130 15% 65%;
+    --accent: 135 15% 15%;
+    --accent-foreground: 120 30% 97%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 120 30% 97%;
+    --border: 135 15% 15%;
+    --input: 135 15% 15%;
+    --ring: 120 50% 65%;
+
+    /* Sidebar dark mode */
+    --sidebar-background: 140 20% 8%;
+    --sidebar-foreground: 120 30% 97%;
+    --sidebar-primary: 120 50% 65%;
+    --sidebar-primary-foreground: 140 25% 10%;
+    --sidebar-accent: 135 15% 15%;
+    --sidebar-accent-foreground: 120 30% 97%;
+    --sidebar-border: 135 15% 15%;
+    --sidebar-ring: 120 50% 65%;
+
+    /* Code syntax highlighting - Dark Mode (HSL format convertido a RGB) */
+    --code-background: 21 31 25; /* hsl(140 20% 12%) → rgb */
+    --code-text: 240 243 240; /* hsl(120 25% 95%) → rgb */
+    --code-comment: 140 166 140; /* hsl(130 15% 55%) → rgb */
+    --code-punctuation: 178 204 178; /* hsl(125 20% 70%) → rgb */
+    --code-variable: 102 217 204; /* hsl(180 50% 65%) → rgb */
+    --code-tag: 77 230 179; /* hsl(150 70% 70%) → rgb */
+    --code-number: 191 230 140; /* hsl(80 80% 65%) → rgb */
+    --code-string: 102 217 191; /* hsl(160 60% 65%) → rgb */
+    --code-operator: 102 217 204; /* hsl(180 50% 65%) → rgb */
+    --code-keyword: 191 230 166; /* hsl(100 70% 70%) → rgb */
+    --code-function: 128 230 198; /* hsl(140 65% 68%) → rgb */
+    --code-class: 128 230 198; /* hsl(140 65% 68%) → rgb */
+    --code-attribute: 102 217 191; /* hsl(160 60% 65%) → rgb */
+    --code-builtin: 102 217 191; /* hsl(160 60% 65%) → rgb */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* Markdown Styles */
+  .prose {
+    @apply max-w-none text-foreground;
+  }
+
+  .prose h1 {
+    @apply text-4xl font-bold mt-8 mb-4 text-foreground border-b pb-2 border-border;
+  }
+
+  .prose h2 {
+    @apply text-3xl font-semibold mt-6 mb-3 text-foreground;
+  }
+
+  .prose h3 {
+    @apply text-2xl font-semibold mt-5 mb-2 text-foreground;
+  }
+
+  .prose h4 {
+    @apply text-xl font-semibold mt-4 mb-2 text-foreground;
+  }
+
+  .prose h5 {
+    @apply text-lg font-semibold mt-3 mb-2 text-foreground;
+  }
+
+  .prose h6 {
+    @apply text-base font-semibold mt-3 mb-2 text-foreground;
+  }
+
+  .prose p {
+    @apply my-4 leading-7;
+  }
+
+  .prose a {
+    @apply text-primary underline-offset-4 hover:underline transition-colors;
+  }
+
+  .prose strong {
+    @apply font-semibold text-foreground;
+  }
+
+  .prose code {
+    @apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-foreground;
+  }
+
+  .prose pre {
+    @apply my-0 overflow-visible rounded-lg bg-transparent p-0 shadow-none border-0;
+  }
+
+  .prose pre code {
+    @apply bg-transparent p-0 text-sm;
+  }
+
+  .prose ul {
+    @apply my-4 ml-6 list-disc;
+  }
+
+  .prose ol {
+    @apply my-4 ml-6 list-decimal;
+  }
+
+  .prose li {
+    @apply mt-2;
+  }
+
+  .prose blockquote {
+    @apply mt-6 border-l-4 border-primary pl-6 italic text-muted-foreground;
+  }
+
+  .prose table {
+    @apply w-full border-collapse my-4;
+  }
+
+  .prose th {
+    @apply border border-border bg-muted px-4 py-2 text-left font-semibold;
+  }
+
+  .prose td {
+    @apply border border-border px-4 py-2;
+  }
+
+  .prose img {
+    @apply rounded-lg my-4;
+  }
+
+  .prose hr {
+    @apply my-8 border-border;
+  }
+}
+
+/* Custom Loading Animations */
+@keyframes pulse-height {
+  0%, 100% {
+    transform: scaleY(0.5);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(24px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(24px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-reverse {
+  0% {
+    transform: rotate(360deg) translateX(24px) rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg) translateX(24px) rotate(0deg);
+  }
+}
+
+@keyframes flip-page {
+  0%, 100% {
+    transform: rotateY(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: rotateY(180deg);
+    opacity: 1;
+  }
+}
+
+.animate-pulse-height {
+  animation: pulse-height 1.2s ease-in-out infinite;
+}
+
+.animate-orbit {
+  animation: orbit 2s linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbit-reverse 2s linear infinite;
+}
+
+.animate-flip-page {
+  animation: flip-page 1.5s ease-in-out infinite;
+}
