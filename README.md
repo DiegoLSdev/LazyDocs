@@ -1,6 +1,6 @@
 # LazyDocs
 
-> A simple, beautiful, and customizable documentation platform
+> Stop fighting with complex doc generators. Write markdown, deploy in one click, done.
 
 LazyDocs is a lightweight documentation platform that makes it easy to create beautiful documentation websites. Simply clone the repository, write your docs in Markdown, and deploy!
 
