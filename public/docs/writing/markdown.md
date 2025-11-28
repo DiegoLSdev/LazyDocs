@@ -3,8 +3,6 @@ title: Markdown Guide
 description: Complete guide to writing documentation with Markdown
 ---
 
-# Markdown Guide
-
 LazyDocs uses Markdown for writing documentation. This guide covers all the Markdown features supported.
 
 ## Headings

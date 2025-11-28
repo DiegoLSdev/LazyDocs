@@ -3,10 +3,6 @@ title: Dark Mode
 description: Built-in dark mode with automatic detection and theme switcher
 ---
 
-# Dark Mode
-
-LazyDocs includes automatic dark mode. No configuration needed!
-
 ## How It Works
 
 Dark mode is **built into each theme**. Every theme has:

@@ -3,8 +3,6 @@ title: Complete Branding Guide
 description: Logo, favicon, colors, and visual identity
 ---
 
-# Complete Branding Guide
-
 Make LazyDocs match your brand with custom logo, colors, and favicon.
 
 ## Quick Setup

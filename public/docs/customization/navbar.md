@@ -3,9 +3,11 @@ title: Navbar Customization
 description: Add custom links to the top navigation bar
 ---
 
-# Navbar Customization
-
 Add links to the top navigation bar via `public/config.json`.
+
+## File Location
+Important: at public/config.json (not project root).
+
 
 ## Basic Setup
 

@@ -5,8 +5,6 @@ keywords: navigation, breadcrumbs, page navigation, reading progress, UX
 author: LazyDocs Team
 ---
 
-# Enhanced Navigation
-
 LazyDocs includes powerful navigation features that make it easy for users to explore your documentation and track their progress.
 
 ## Overview

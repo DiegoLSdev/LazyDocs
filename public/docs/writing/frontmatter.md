@@ -3,8 +3,6 @@ title: Frontmatter
 description: Add metadata to your documentation pages using frontmatter
 ---
 
-# Frontmatter
-
 Frontmatter allows you to add metadata to your Markdown pages. It's written in YAML format at the beginning of your file.
 
 ## What is Frontmatter?

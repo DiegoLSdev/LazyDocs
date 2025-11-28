@@ -4,8 +4,6 @@ description: Full-text search with fuzzy matching and instant results
 keywords: search, fuzzy search, fuse.js, keyboard shortcuts, navigation
 ---
 
-# Advanced Search System
-
 LazyDocs includes a powerful full-text search system with fuzzy matching, instant results, and intelligent ranking.
 
 ## Features

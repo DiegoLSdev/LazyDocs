@@ -3,13 +3,9 @@ title: Configuration Guide
 description: Complete guide to config.json settings
 ---
 
-# Configuration Guide
-
-Configure LazyDocs through `public/config.json`.
-
 ## File Location
 
-**Important:** Config is at `public/config.json` (not project root).
+**Important:** at `public/config.json` (not project root).
 
 ## Basic Structure
 

@@ -3,10 +3,6 @@ title: Logo & Branding
 description: Add your logo with light and dark mode variants
 ---
 
-# Logo & Branding
-
-Customize your site with a logo that adapts to light and dark mode.
-
 ## Logo Configuration
 
 The logo in LazyDocs supports **separate images for light and dark mode**.

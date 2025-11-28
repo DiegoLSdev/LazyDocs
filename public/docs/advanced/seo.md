@@ -4,8 +4,6 @@ description: Optimize your documentation site for search engines
 keywords: seo, search engine optimization, meta tags, sitemap, robots.txt
 ---
 
-# SEO Optimization
-
 LazyDocs includes built-in SEO optimization features to help your documentation rank better in search engines like Google, Bing, and DuckDuckGo.
 
 ## Automatic SEO Features

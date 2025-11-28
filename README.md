@@ -4,6 +4,8 @@
 
 LazyDocs is a lightweight documentation platform that makes it easy to create beautiful documentation websites. Simply clone the repository, write your docs in Markdown, and deploy!
 
+You can see the [demo](https://my-lazy-docs.vercel.app/) here: 
+
 ## Features
 
 - **Markdown-Based**: Write documentation using simple Markdown syntax

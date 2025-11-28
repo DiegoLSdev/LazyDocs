@@ -3,10 +3,6 @@ title: Themes & Colors
 description: Choose from 4 beautiful pre-built themes or customize your own
 ---
 
-# Themes & Colors
-
-LazyDocs includes 4 professionally designed themes. Switch themes instantly via `config.json`.
-
 ## Available Themes
 
 ### 🟤 Brownie (Default)

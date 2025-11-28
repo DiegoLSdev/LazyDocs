@@ -5,8 +5,6 @@ keywords: mdx, components, interactive, callout, tabs, code, cards, steps, accor
 author: LazyDocs Team
 ---
 
-# Interactive MDX Components
-
 LazyDocs comes with a rich set of interactive components that you can use directly in your markdown files. These components help you create more engaging and professional documentation.
 
 ## Overview

@@ -3,8 +3,6 @@ title: Organizing Content
 description: Best practices for structuring and organizing your documentation
 ---
 
-# Organizing Content
-
 Good documentation structure makes it easy for users to find what they need. This guide will help you organize your content effectively.
 
 ## Folder Structure

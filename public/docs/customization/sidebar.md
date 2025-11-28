@@ -3,8 +3,8 @@ title: Sidebar Organization
 description: Auto-generated sidebar from your folder structure
 ---
 
-# Sidebar Organization
 
+## File Location
 The sidebar is **automatically generated** from your folder structure in `public/docs/`.
 
 ## How It Works

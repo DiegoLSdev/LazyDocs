@@ -1,9 +1,8 @@
 ---
 title: Automatic Sidebar Generation
 order: 1
+description: Generates the sidebar structure.
 ---
-
-# Automatic Sidebar Generation
 
 LazyDocs now automatically generates the sidebar structure based on the markdown folders and files you have in the `docs/` directory.
 
