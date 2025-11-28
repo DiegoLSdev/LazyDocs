@@ -26,7 +26,7 @@
     "badge": "Construit avec React + Vite",
     "title": "Documentation",
     "titleGradient": "À votre rythme",
-    "subtitle": "Détendez-vous. Nous nous occupons de vos docs. Créez des sites de documentation professionnels avec markdown, des composants personnalisés et un design élégant.",
+    "subtitle": "Oublie les configs compliquées. Écris en markdown, déploie, c'est tout. Ton contenu compte, pas l'outil.",
     "cta": {
       "start": "Commencer",
       "quickGuide": "Guide Rapide"

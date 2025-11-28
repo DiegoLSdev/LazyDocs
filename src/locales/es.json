@@ -25,8 +25,8 @@
   "hero": {
     "badge": "Construido con React + Vite",
     "title": "Documentación",
-    "titleGradient": "Eficientemente Relajada",
-    "subtitle": "Relájate. Nosotros nos encargamos de tus docs. Crea sitios de documentación profesionales con markdown, componentes personalizados y un diseño elegante.",
+    "titleGradient": "a tu ritmo",
+    "subtitle": "Olvídate del setup complicado. Escribe en markdown, despliega y listo. Lo importante es tu contenido, no la herramienta.",
     "cta": {
       "start": "Empezar",
       "quickGuide": "Guía Rápida"

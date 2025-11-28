@@ -26,7 +26,7 @@
     "badge": "Erstellt mit React + Vite",
     "title": "Dokumentation",
     "titleGradient": "In Ihrem eigenen Tempo",
-    "subtitle": "Entspannen Sie sich. Wir kümmern uns um Ihre Docs. Erstellen Sie professionelle Dokumentationsseiten mit Markdown, benutzerdefinierten Komponenten und elegantem Design.",
+    "subtitle": "Vergiss komplizierte Setups. Schreib in Markdown, deploy, fertig. Dein Inhalt zählt, nicht das Tool.",
     "cta": {
       "start": "Loslegen",
       "quickGuide": "Schnellstart"
