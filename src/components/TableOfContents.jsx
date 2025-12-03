@@ -90,7 +90,7 @@ function TableOfContents({ content }) {
   }
 
   return (
-    <aside className="hidden xl:block w-60 shrink-0 pr-6 mr-[50px]">
+    <aside className="hidden p-6 xl:block w-60 shrink-0 mr-[50px]">
       <div className="py-10 sticky top-20 h-[calc(100vh-5rem)]">
         <div className="mb-4">
           <h4 className="text-sm font-semibold text-foreground">{t('toc.title')}</h4>

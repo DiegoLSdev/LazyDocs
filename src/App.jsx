@@ -77,7 +77,7 @@ function App() {
     <HelmetProvider>
       <LocaleProvider>
         <SidebarProvider defaultOpen={true}>
-          <div className="relative flex min-h-screen w-full flex-col">
+          <div className="relative flex min-h-full w-full flex-col items-center justify-center">
             {/* Header */}
             <Header
               config={config}
@@ -92,7 +92,7 @@ function App() {
               <AppSidebar docsPath={config.docsPath} config={config} />
 
               {/* CONTENT */}
-              <SidebarInset className="flex min-h-0 w-full flex-col pl-6">
+              <SidebarInset className="flex min-h-0 flex-col pl-6 min-w-[900px] max-w-[900px]">
                 <div className="flex flex-1 flex-col">
                   <Routes>
                     <Route
