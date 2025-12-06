@@ -16,8 +16,8 @@ export async function loadConfig() {
         dark: '/logo-dark.png'
       },
       title: {
-        light: '/title.png',
-        dark: '/title-dark.png'
+        light: 'assets/titles/title.png',
+        dark: 'assets/titles/title-dark.png'
       },
       theme: {},
       navbar: { links: [] },

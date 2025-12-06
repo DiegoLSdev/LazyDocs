@@ -26,7 +26,8 @@
     "badge": "Erstellt mit React + Vite",
     "title": "Dokumentation",
     "titleGradient": "In Ihrem eigenen Tempo",
-    "subtitle": "Vergiss komplizierte Setups. Schreib in Markdown, deploy, fertig. Dein Inhalt zählt, nicht das Tool.",
+    "subtitle": "Markdown schreiben und bereitstellen, das ist alles.",
+    "subtitleHighlight": "Der Inhalt zählt, nicht das Framework.",
     "cta": {
       "start": "Loslegen",
       "quickGuide": "Schnellstart"
@@ -66,7 +67,7 @@
       "docs": "Dokumentation",
       "github": "GitHub"
     },
-        "starCta": {
+    "starCta": {
       "text": "War das hilfreich?",
       "action": "Gib uns einen Stern auf GitHub"
     }

@@ -26,7 +26,8 @@
     "badge": "Construido con React + Vite",
     "title": "Documentación",
     "titleGradient": "a tu ritmo",
-    "subtitle": "Olvídate del setup complicado. Escribe en markdown, despliega y listo. Lo importante es tu contenido, no la herramienta.",
+    "subtitle": "Escribe en markdown y despliega, así de simple.",
+    "subtitleHighlight": "Lo importante es tu contenido, no la herramienta.",
     "cta": {
       "start": "Empezar",
       "quickGuide": "Guía Rápida"
@@ -89,7 +90,8 @@
     },
     "starCta": {
       "text": "¿Te fue útil?",
-      "action": "Danos una estrella en GitHub"
+      "action": "Danos una estrella en GitHub",
+      "button": "Lazy Docs"
     }
   }
 }

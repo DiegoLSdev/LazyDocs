@@ -26,7 +26,8 @@
     "badge": "Built with React + Vite",
     "title": "Documentation",
     "titleGradient": "At your own pace",
-    "subtitle": "Skip the complex setup. Write in markdown, deploy, done. Your content matters, not the framework.",
+    "subtitle": "Write markdown and deploy, that's it.",
+    "subtitleHighlight": "Your content matters, not the framework.",
     "cta": {
       "start": "Get Started",
       "quickGuide": "Quick Guide"
@@ -66,9 +67,10 @@
       "docs": "Documentation",
       "github": "GitHub"
     },
-        "starCta": {
+    "starCta": {
       "text": "Was this helpful?",
-      "action": "Give us a star on GitHub"
+      "action": "Give us a star on GitHub",
+      "button": "Lazy Docs"
     }
   }
 }

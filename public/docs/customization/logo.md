@@ -83,8 +83,8 @@ Want an image for your site title instead of text?
 ```json
 {
   "title": {
-    "light": "/assets/title/title-light.png",
-    "dark": "/assets/title/title-dark.png"
+    "light": "public/assets/title/title-light.png",
+    "dark": "public/assets/title/title-dark.png"
   }
 }
 ```

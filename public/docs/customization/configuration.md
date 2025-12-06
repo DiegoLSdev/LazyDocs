@@ -80,8 +80,8 @@ Path to favicon file in `public/`.
 ```json
 {
   "logo": {
-    "light": "/assets/logo/logo.png",
-    "dark": "/assets/logo/logo-dark.png"
+    "light": "/assets/logos/logo.png",
+    "dark": "/assets/logos/logo-dark.png"
   }
 }
 ```
@@ -95,8 +95,8 @@ Place images in `public/assets/logo/`.
 ```json
 {
   "title": {
-    "light": "/assets/title/title-light.png",
-    "dark": "/assets/title/title-dark.png"
+    "light": "/assets/titles/title-light.png",
+    "dark": "/assets/titles/title-dark.png"
   }
 }
 ```

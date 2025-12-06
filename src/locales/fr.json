@@ -26,7 +26,8 @@
     "badge": "Construit avec React + Vite",
     "title": "Documentation",
     "titleGradient": "À votre rythme",
-    "subtitle": "Oublie les configs compliquées. Écris en markdown, déploie, c'est tout. Ton contenu compte, pas l'outil.",
+    "subtitle": "Écrivez du Markdown et déployez, c'est tout.",
+    "subtitleHighlight": "Oublie les configs compliquées. Écris en markdown, déploie, c'est tout. Ton contenu compte, pas l'outil.",
     "cta": {
       "start": "Commencer",
       "quickGuide": "Guide Rapide"
@@ -68,7 +69,8 @@
     },
     "starCta": {
       "text": "Cela vous a-t-il aidé?",
-      "action": "Donnez-nous une étoile sur GitHub"
+      "action": "Donnez-nous une étoile sur GitHub",
+      "button": "Lazy Docs"
     }
   }
 }

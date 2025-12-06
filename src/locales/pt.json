@@ -26,14 +26,16 @@
     "badge": "Construído com React + Vite",
     "title": "Documentação",
     "titleGradient": "No seu próprio ritmo",
-    "subtitle": "Esqueça configurações complexas. Escreve em markdown, publica, pronto. Seu conteúdo importa, não a ferramenta.",
+    "subtitle": "Escreva em Markdown e publique, é só isso.",
+    "subtitleHighlight": "O que importa é o conteúdo, não a estrutura.",
     "cta": {
       "start": "Começar",
       "quickGuide": "Guia Rápido"
     },
     "features": {
-      "title": "Tudo que você precisa",
-      "subtitle": "Recursos modernos para criar a melhor experiência de documentação",
+      "title": "Tudo que você precisa", 
+      "subtitle": "Escreva em Markdown e publique, é só isso.",
+      "subtitleHighlight": "O que importa é o conteúdo, não a estrutura.",
       "items": {
         "docs": {
           "title": "Documentação Clara",
@@ -68,7 +70,8 @@
     },
     "starCta": {
       "text": "Isso foi útil?",
-      "action": "Dê-nos uma estrela no GitHub"
+      "action": "Dê-nos uma estrela no GitHub",
+      "button": "Lazy Docs"
     }
   }
 }

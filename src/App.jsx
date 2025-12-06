@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import Header from "./components/Header";
+import Header from "./components/Navbar";
 import AppSidebar from "./components/AppSidebar";
 import DocContent from "./components/DocContent";
 import Footer from "./components/Footer";

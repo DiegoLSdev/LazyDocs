@@ -2,12 +2,12 @@
   "siteName": "LazyDocs",
   "tagline": "Create beautiful documentation with ease",
   "logo": {
-    "light": "/logo.png",
-    "dark": "/logo.png" 
+    "light": "/assets/logos/logo.png",
+    "dark": "/assets/logos/logo.png" 
   },
   "title": {
-    "light": "/title-light.png",
-    "dark": "/title-dark.png"
+    "light": "/assets/titles/title-light.png",
+    "dark": "/assets/titles/title-dark.png"
   },
   "favicon": "/favicon.ico",
   "colorTheme": "brownie",
@@ -15,7 +15,7 @@
     "links": [
       {
         "label": "Docs",
-        "to": "/docs/getting-started/introduction"
+        "to": "/docs/getting-started/installation"
       },
       {
         "label": "GitHub",

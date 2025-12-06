@@ -13,15 +13,15 @@ function FloatingCards3D() {
   // Hardcoded images
   const displayImages = [
     {
-      src: '/screenshots/prev1.png',
+      src: 'assets/screenshots/prev1.png',
       alt: 'Dark Mode UI'
     },
     {
-      src: '/screenshots/prev2.png',
+      src: 'assets/screenshots/prev2.png',
       alt: 'Light Mode UI'
     },
     {
-      src: '/screenshots/prev3.png',
+      src: 'assets/screenshots/prev3.png',
       alt: 'Code Highlighting'
     }
   ];
