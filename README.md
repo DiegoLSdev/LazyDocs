@@ -1,5 +1,10 @@
-<img src="./public/assets/titles/title-dark.png" height="80px">
-<img src="./public/assets/logos/logo.png" height="80px">
+
+
+<div style="display: flex; flex-direction: row;">
+  <img src="./public/assets/titles/title-dark.png" height="80px">
+  <img src="./public/assets/logos/logo.png" height="80px">
+</div>
+
 
 LazyDocs is a lightweight documentation platform that makes it easy to create beautiful documentation websites. Simply clone the repository, write your docs in Markdown, and deploy!
 
