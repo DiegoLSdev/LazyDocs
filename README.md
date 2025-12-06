@@ -1,8 +1,9 @@
-# LazyDocs
-
-> Stop fighting with complex doc generators. Write markdown, deploy in one click, done.
+<img src="./public/assets/titles/title-dark.png" height="80px">
+<img src="./public/assets/logos/logo.png" height="80px">
 
 LazyDocs is a lightweight documentation platform that makes it easy to create beautiful documentation websites. Simply clone the repository, write your docs in Markdown, and deploy!
+
+<img src="./public/assets/screenshots/hero.png" height="400px">
 
 You can see the demo [here](https://my-lazy-docs.vercel.app/)
 
