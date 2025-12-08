@@ -8,6 +8,7 @@ import { loadMarkdownFile } from '../utils/markdown';
 import Breadcrumbs from './Breadcrumbs';
 import PageNavigation from './PageNavigation';
 import SEO from './SEO';
+import { mdxComponents } from './MDXProvider';
 import SkeletonLoader from './SkeletonLoader';
 import CategoryIndex from './CategoryIndex';
 
@@ -144,6 +145,7 @@ function DocContent({ docsPath, siteName = 'LazyDocs', structure = [], onContent
             <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeSlug, rehypeRaw]}
+                components={mdxComponents}
             >
               {content}
             </ReactMarkdown>

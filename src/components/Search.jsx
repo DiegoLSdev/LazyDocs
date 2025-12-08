@@ -172,6 +172,7 @@ function Search({ open, onOpenChange }) {
             autoCapitalize="off"
             spellCheck="false"
           />
+
         </div>
 
         {/* Results */}
