@@ -62,6 +62,7 @@ function Search({ open, onOpenChange }) {
         case 'ArrowDown':
           e.preventDefault();
           setSelectedIndex((prev) => Math.min(prev + 1, results.length - 1));
+          navigateToResult(results[selectedIndex]);
           break;
 
         case 'ArrowUp':
