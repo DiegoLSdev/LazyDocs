@@ -8,8 +8,6 @@
 
 LazyDocs is a lightweight documentation platform that makes it easy to create beautiful documentation websites. Simply clone the repository, write your docs in Markdown, and deploy!
 
-<img src="./public/assets/screenshots/hero.png" height="400px">
-
 You can see the demo [here](https://my-lazy-docs.vercel.app/)
 
 ## Features
@@ -297,20 +295,6 @@ Contributions are welcome! Feel free to:
 - Submit pull requests
 - Improve documentation
 
-## Support the Project ☕
-
-LazyDocs is **100% free and open source**. If you find it useful and want to support its development, consider buying me a coffee!
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow.svg?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/lazydocs)
-
-Your support helps me:
-- 🚀 Add new features
-- 🐛 Fix bugs faster
-- 📚 Improve documentation
-- ⚡ Keep the project maintained
-
-**Every coffee counts!** Even a small donation makes a big difference and motivates me to keep improving LazyDocs for everyone.
-
 ### Other Ways to Support
 
 - ⭐ Star the repository on GitHub
@@ -332,8 +316,7 @@ MIT License - feel free to use this for your own projects!
 ---
 
 **Built with LazyDocs** - Simple documentation made easy
-# LazyDocs
-# LazyDocs
-# LazyDocs
-# LazyDocs
-# LazyDocs
+
+
+  <a href="https://www.producthunt.com/products/lazydocs?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-lazydocs" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1043685&theme=light&t=1765130220127" alt="LazyDocs - Write&#0032;markdown&#0046;&#0032;Get&#0032;docs&#0046;&#0032;That&#0039;s&#0032;it | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
