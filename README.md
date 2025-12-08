@@ -1,5 +1,3 @@
-
-
 <div style="display: flex; flex-direction: row;">
   <img src="./public/assets/titles/title-dark.png" height="80px">
   <img src="./public/assets/logos/logo.png" height="80px">
@@ -39,20 +37,17 @@ Click the button above to clone and deploy in one step. Your site will be live i
 #### Installation
 
 1. **Clone this repository**
-
 ```bash
 git clone https://github.com/DiegoLSdev/LazyDocs.git
 cd lazydocs
 ```
 
 2. **Install dependencies**
-
 ```bash
 npm install
 ```
 
 3. **Start development server**
-
 ```bash
 npm run dev
 ```
@@ -65,7 +60,6 @@ Your documentation site will open at `http://localhost:3000`!
 
 1. **Add your logo** to the `public/` folder
 2. **Edit `config.json`**:
-
 ```json
 {
   "siteName": "Your Project Name",
@@ -76,7 +70,6 @@ Your documentation site will open at `http://localhost:3000`!
 ### Customize Colors and Theme
 
 Edit the `theme` section in `config.json`:
-
 ```json
 {
   "theme": {
@@ -101,7 +94,6 @@ Edit the `theme` section in `config.json`:
 ### Change Navigation Links
 
 Edit the `navbar` section in `config.json`:
-
 ```json
 {
   "navbar": {
@@ -118,7 +110,6 @@ Edit the `navbar` section in `config.json`:
 ### Create a New Page
 
 1. **Create a Markdown file** in the `docs/` folder:
-
 ```markdown
 ---
 title: My New Page
@@ -131,7 +122,6 @@ Content goes here...
 ```
 
 2. **Add to sidebar** by editing `docs/sidebar.json`:
-
 ```json
 {
   "type": "file",
@@ -143,7 +133,6 @@ Content goes here...
 ### Organize with Folders
 
 Create nested folders for better organization:
-
 ```
 docs/
 ├── getting-started/
@@ -157,7 +146,6 @@ docs/
 ```
 
 Update `docs/sidebar.json` to reflect your structure:
-
 ```json
 [
   {
@@ -176,7 +164,6 @@ Update `docs/sidebar.json` to reflect your structure:
 ```
 
 ## Project Structure
-
 ```
 lazydocs/
 ├── docs/                    # Your documentation (Markdown files)
@@ -207,7 +194,6 @@ lazydocs/
 ## Building for Production
 
 Build your site for production:
-
 ```bash
 npm run build
 ```
@@ -215,34 +201,32 @@ npm run build
 The built files will be in the `dist/` directory.
 
 Preview the production build:
-
 ```bash
 npm run preview
 ```
 
 ## Deployment
 
-### 🚀 Deploy to Vercel (Recomendado)
+### 🚀 Deploy to Vercel
 
-La forma más rápida de tener tu documentación en línea:
+The fastest way to get your documentation online:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/DiegoLSdev/LazyDocs)
 
-**Click en el botón de arriba y tu sitio estará listo en 2 minutos!**
+**Click the button above and your site will be ready in 2 minutes!**
 
-- ✅ Deploy automático con cada `git push`
-- ✅ HTTPS gratis incluido
-- ✅ CDN global para máxima velocidad
-- ✅ Preview deployments para cada Pull Request
+- ✅ Automatic deployment with every `git push`
+- ✅ Free HTTPS included
+- ✅ Global CDN for maximum speed
+- ✅ Preview deployments for each Pull Request
 
-📖 **[Guía completa de deployment a Vercel](./DEPLOY.md)**
+📖 **[Complete Vercel deployment guide](./DEPLOY.md)**
 
-### Otras Plataformas
+### Other Platforms
 
-LazyDocs genera un sitio estático que puede ser deployado en cualquier servicio:
+LazyDocs generates a static site that can be deployed on any service:
 
 #### GitHub Pages
-
 ```bash
 npm run build
 # Deploy the dist/ folder to GitHub Pages
@@ -309,8 +293,7 @@ MIT License - feel free to use this for your own projects!
 
 ## Support
 
-- Read the [complete documentation](http://localhost:3000/docs/getting-started/introduction)
-- Check out the [examples](http://localhost:3000/docs)
+- Read the [complete documentation](https://github.com/DiegoLSdev/LazyDocs)
 - Open an issue for bugs or questions
 
 ---
@@ -319,4 +302,3 @@ MIT License - feel free to use this for your own projects!
 
 
   <a href="https://www.producthunt.com/products/lazydocs?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-lazydocs" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1043685&theme=light&t=1765130220127" alt="LazyDocs - Write&#0032;markdown&#0046;&#0032;Get&#0032;docs&#0046;&#0032;That&#0039;s&#0032;it | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-

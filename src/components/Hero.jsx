@@ -77,7 +77,7 @@ const Hero = ({ config, isDark, onToggleDarkMode }) => {
               <a
                 href={
                   config?.repository ||
-                  "https://github.com/your-username/lazydocs"
+                  "https://github.com/DiegoLSdev/LazyDocs"
                 }
                 target="_blank"
                 rel="noopener noreferrer"
@@ -90,7 +90,7 @@ const Hero = ({ config, isDark, onToggleDarkMode }) => {
                 onClick={() =>
                   window.open(
                     config?.repository ||
-                      "https://github.com/your-username/lazydocs",
+                      "https://github.com/DiegoLSdev/LazyDocs",
                     "_blank"
                   )
                 }
