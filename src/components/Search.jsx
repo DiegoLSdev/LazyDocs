@@ -172,9 +172,6 @@ function Search({ open, onOpenChange }) {
             autoCapitalize="off"
             spellCheck="false"
           />
-          <kbd className="">
-            
-          </kbd>
         </div>
 
         {/* Results */}
