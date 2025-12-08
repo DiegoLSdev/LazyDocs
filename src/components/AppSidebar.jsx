@@ -120,15 +120,6 @@ function AppSidebar({ docsPath, config }) {
               </SidebarGroup>
             </ScrollArea>
           </SidebarContent>
-
-          {/* Footer fijo */}
-          {/*
-            <SidebarFooter className="shrink-0">
-            <div className="px-2 py-2 text-xs text-sidebar-foreground/70">
-              <p>Made with LazyDocs</p>
-            </div>
-          </SidebarFooter>
-          */}
         </Sidebar>
       </div>
   );
