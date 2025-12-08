@@ -28,11 +28,6 @@ function App() {
     loadConfig().then(setConfig);
   }, []);
 
-  useEffect(() => {
-    if (config?.docsPath) {
-      generateSidebarStructure(config.docsPath).then(setSidebarStructure);
-    }
-  }, [config]);
 
   useEffect(() => {
     if (config?.siteName) {
