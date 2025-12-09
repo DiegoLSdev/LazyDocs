@@ -1,29 +1,57 @@
 import { useState, useEffect } from 'react';
+import themeTransition from '../utils/themeTransition';
 
+/**
+ * Enhanced Dark Mode Hook with Smooth Transitions
+ * Automatically handles smooth theme switching without jarring visual changes
+ */
 export function useDarkMode() {
   const [isDark, setIsDark] = useState(() => {
     // Check localStorage first
     const saved = localStorage.getItem('darkMode');
     if (saved !== null) {
-      return saved === 'true';
+      return JSON.parse(saved);
     }
-    // Check system preference
+    // Fall back to system preference
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
 
   useEffect(() => {
-    // Save to localStorage
-    localStorage.setItem('darkMode', isDark.toString());
-
-    // Apply to document (use 'dark' for Tailwind)
+    const root = window.document.documentElement;
+    
     if (isDark) {
-      document.documentElement.classList.add('dark');
+      root.classList.add('dark');
     } else {
-      document.documentElement.classList.remove('dark');
+      root.classList.remove('dark');
     }
+    
+    // Save preference
+    localStorage.setItem('darkMode', JSON.stringify(isDark));
   }, [isDark]);
 
-  const toggle = () => setIsDark(!isDark);
+  // Listen for system theme changes
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    const handleChange = async (e) => {
+      // Only auto-switch if user hasn't manually set preference
+      const hasManualPreference = localStorage.getItem('darkMode') !== null;
+      if (!hasManualPreference) {
+        await themeTransition.transition(() => {
+          setIsDark(e.matches);
+        });
+      }
+    };
+    
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
+
+  const toggle = async () => {
+    await themeTransition.toggleDarkMode(isDark, () => {
+      setIsDark(prev => !prev);
+    });
+  };
 
   return { isDark, toggle };
 }

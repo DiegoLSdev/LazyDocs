@@ -2,24 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import themeManager from './utils/themeManager';
 
-async function loadTheme() {
+async function loadConfig() {
   try {
     const response = await fetch('/config.json');
-    const config = await response.json();
-    const theme = config.colorTheme || 'brownie';
-    
-    // Importar el tema correspondiente
-    await import(`./themes/${theme}.css`);
+    return await response.json();
   } catch (error) {
-    console.error('Error loading theme:', error);
-    // Fallback al tema brownie
-    await import('./themes/brownie.css');
+    console.error('Error loading config:', error);
+    return { colorTheme: 'brownie' };
   }
 }
 
-// Cargar tema antes de renderizar la app
-loadTheme().then(() => {
+async function initializeApp() {
+  // Load config
+  const config = await loadConfig();
+  
+  // Initialize theme with smooth loading
+  await themeManager.initialize(config.colorTheme);
+  
+  // Render app
   ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
       <BrowserRouter>
@@ -27,4 +29,7 @@ loadTheme().then(() => {
       </BrowserRouter>
     </React.StrictMode>
   );
-});
+}
+
+// Initialize app
+initializeApp();

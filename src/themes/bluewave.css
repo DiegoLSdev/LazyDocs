@@ -5,7 +5,7 @@
 @layer base {
   :root {
     /* Light mode - Ocean Blue/Sky scheme */
-    --background: 210 40% 98%;
+    --background: 210 20% 98%; 
     --foreground: 220 20% 10%;
     --card: 210 40% 98%;
     --card-foreground: 220 20% 10%;
@@ -86,10 +86,10 @@
     --sidebar-ring: 217 91% 60%;
 
     /* Syntax Highlighting - Dark Mode (Deep Ocean colors) */
-    --code-background: 15 23 42; /* Slate-900 - fondo oscuro azulado */
+    --code-background: 22 21 31; /* hsl(140 20% 12%) → rgb */
     --code-text: 248 250 252; /* Slate-50 - texto claro */
     --code-comment: 148 163 184; /* Slate-400 - comentarios */
-    --code-keyword: 96 165 250; /* Blue-400 - palabras clave azul brillante */
+    --code-keyword: 96 165 250; /* Blue-400 - palabras clave azul brillante */ 
     --code-string: 134 239 172; /* Green-300 - strings verde menta */
     --code-function: 147 197 253; /* Blue-300 - funciones azul claro */
     --code-number: 252 165 165; /* Red-300 - números rosa/rojo */

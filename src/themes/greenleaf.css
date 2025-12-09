@@ -5,7 +5,7 @@
 @layer base {
   :root {
     /* Light mode - Fresh Green/Sage scheme */
-    --background: 120 40% 98%;
+    --background: 210 20% 98%;
     --foreground: 140 20% 8%;
     --card: 120 40% 98%;
     --card-foreground: 140 20% 8%;

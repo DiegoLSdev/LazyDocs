@@ -6,38 +6,11 @@ import { cn } from '@/lib/utils';
 
 // Tema personalizado completo para mejor highlighting
 const customTheme = {
-  'code[class*="language-"]': {
-    color: 'rgb(var(--code-text))',
-    background: 'transparent',
-    textShadow: 'none',
-    fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace',
-    fontSize: '0.875rem',
-    textAlign: 'left',
-    whiteSpace: 'pre',
-    wordSpacing: 'normal',
-    wordBreak: 'normal',
-    wordWrap: 'normal',
-    lineHeight: '1.7',
-    tabSize: 4,
-    hyphens: 'none',
-  },
   'pre[class*="language-"]': {
-    color: 'rgb(var(--code-text))',
     background: 'rgb(var(--code-background))',
-    textShadow: 'none',
-    fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace',
-    fontSize: '0.875rem',
     textAlign: 'left',
-    whiteSpace: 'pre',
-    wordSpacing: 'normal',
-    wordBreak: 'normal',
-    wordWrap: 'normal',
-    lineHeight: '1.7',
-    tabSize: 4,
-    hyphens: 'none',
     padding: '1rem',
     margin: 0,
-    overflow: 'auto',
   },
   // Comentarios
   'comment': { color: 'rgb(var(--code-comment))', fontStyle: 'italic' },
@@ -171,38 +144,53 @@ function CodeBlock({
 
   return (
     <div className={cn('code-block group relative my-6 rounded-lg overflow-hidden border border-border', className)}>
+
+      {/* Language badge y Copy button juntos a la derecha */}
+      {!filename && (
+        <div className="absolute right-2 top-2 z-10 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="bg-muted/80 backdrop-blur-sm px-2 py-1 rounded text-xs font-mono text-muted-foreground uppercase">
+            {detectedLanguage}
+          </div>
+          <Button
+            size="icon"
+            variant="ghost"
+            onClick={handleCopy}
+            className="h-8 w-8 bg-background/80 hover:bg-background text-foreground backdrop-blur-sm"
+            aria-label="Copy code"
+            title={copied ? '¡Copiado!' : 'Copiar código'}
+          >
+            {copied ? (
+              <Check className="h-4 w-4" />
+            ) : (
+              <Copy className="h-4 w-4" />
+            )}
+          </Button>
+        </div>
+      )}
+
       {/* Filename header */}
       {filename && (
         <div className="flex items-center justify-between bg-muted border-b border-border px-4 py-2 text-sm font-mono text-muted-foreground">
           <span>{filename}</span>
-          <span className="text-xs uppercase opacity-70">{detectedLanguage}</span>
+          <div className="flex items-center gap-2">
+            <span className="text-xs uppercase opacity-70">{detectedLanguage}</span>
+            <Button
+              size="icon"
+              variant="ghost"
+              onClick={handleCopy}
+              className="h-6 w-6 hover:bg-background/80 text-foreground"
+              aria-label="Copy code"
+              title={copied ? '¡Copiado!' : 'Copiar código'}
+            >
+              {copied ? (
+                <Check className="h-3 w-3" />
+              ) : (
+                <Copy className="h-3 w-3" />
+              )}
+            </Button>
+          </div>
         </div>
       )}
-
-      {/* Language badge when no filename */}
-      {!filename && (
-        <div className="absolute left-3 top-2 z-10 bg-muted/80 backdrop-blur-sm px-2 py-1 rounded text-xs font-mono text-muted-foreground uppercase opacity-0 group-hover:opacity-100 transition-opacity">
-          {detectedLanguage}
-        </div>
-      )}
-
-      {/* Copy button */}
-      <div className="absolute right-2 top-2 z-10">
-        <Button
-          size="icon"
-          variant="ghost"
-          onClick={handleCopy}
-          className="h-8 w-8 bg-background/80 hover:bg-background text-foreground opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm"
-          aria-label="Copy code"
-          title={copied ? '¡Copiado!' : 'Copiar código'}
-        >
-          {copied ? (
-            <Check className="h-4 w-4" />
-          ) : (
-            <Copy className="h-4 w-4" />
-          )}
-        </Button>
-      </div>
 
       {/* Code content */}
       <SyntaxHighlighter
