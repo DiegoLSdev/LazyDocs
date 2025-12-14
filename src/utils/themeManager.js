@@ -11,44 +11,26 @@ class ThemeManager {
   }
 
   /**
-   * Load a theme CSS file dynamically
+   * Load a theme CSS file dynamically using Vite's dynamic import
    * @param {string} themeName - Name of the theme to load
    * @returns {Promise<void>}
    */
   async loadThemeCSS(themeName) {
     // Check if already loaded
     if (this.loadedThemes.has(themeName)) {
+      this.currentTheme = themeName;
       return Promise.resolve();
     }
 
-    return new Promise((resolve, reject) => {
-      // Remove old theme link if exists
-      const oldLink = document.querySelector(`link[data-theme]`);
-      
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = `/src/themes/${themeName}.css`;
-      link.setAttribute('data-theme', themeName);
-      
-      link.onload = () => {
-        this.loadedThemes.add(themeName);
-        this.currentTheme = themeName;
-        
-        // Remove old theme after new one loads
-        if (oldLink && oldLink !== link) {
-          setTimeout(() => oldLink.remove(), 100);
-        }
-        
-        resolve();
-      };
-      
-      link.onerror = () => {
-        console.error(`Failed to load theme: ${themeName}`);
-        reject(new Error(`Theme ${themeName} not found`));
-      };
-      
-      document.head.appendChild(link);
-    });
+    try {
+      // Use Vite's dynamic import for CSS - this ensures PostCSS/Tailwind processes the file
+      await import(`../themes/${themeName}.css`);
+      this.loadedThemes.add(themeName);
+      this.currentTheme = themeName;
+    } catch (error) {
+      console.error(`Failed to load theme: ${themeName}`, error);
+      throw new Error(`Theme ${themeName} not found`);
+    }
   }
 
   /**
