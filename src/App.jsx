@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Navbar";
 import AppSidebar from "./components/AppSidebar";
 import DocContent from "./components/DocContent";
@@ -66,6 +67,7 @@ function App() {
                 } 
               />
             </Routes>
+            <Analytics />
           </div>
         </LocaleProvider>
       </HelmetProvider>
@@ -114,6 +116,7 @@ function App() {
               {/* TableOfContents ahora recibe el contenido desde App */}
               <TableOfContents content={content} />
             </div>
+            <Analytics />
           </div>
         </SidebarProvider>
       </LocaleProvider>
