@@ -9,7 +9,7 @@
     "light": "/assets/titles/title-light.png",
     "dark": "/assets/titles/title-dark.png"
   },
-  "favicon": "/favicon.ico",
+  "favicon": "/assets/logos/favicon.ico",
   "colorTheme": "brownie",
   "navbar": {
     "links": [

@@ -22,76 +22,303 @@
     "de": "Deutsch",
     "pt": "Português"
   },
-  "hero": {
-    "badge": "Construido con React + Vite",
-    "title": "Documentación",
-    "titleGradient": "a tu ritmo",
-    "subtitle": "Escribe en markdown y despliega, así de simple.",
-    "subtitleHighlight": "Lo importante es tu contenido, no la herramienta.",
-    "cta": {
-      "start": "Empezar",
-      "quickGuide": "Guía Rápida"
+  "landing": {
+    "meta": {
+      "title": "LazyDocs — Documentación a tu ritmo",
+      "description": "Escribe en Markdown y obtén una web de documentación rápida, con buscador y temas. Código abierto, hecho con React y Vite, con modo oscuro y cinco idiomas de serie."
     },
-    "stats": {
-      "markdown": "Markdown",
-      "navigation": "Navegación",
-      "possibilities": "Posibilidades"
+    "common": {
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "copyCommand": "Copiar el comando para clonar"
+    },
+    "nav": {
+      "label": "Principal",
+      "home": "Inicio de LazyDocs",
+      "how": "Cómo funciona",
+      "writing": "Escritura",
+      "themes": "Temas",
+      "features": "Funciones",
+      "faq": "Preguntas",
+      "docs": "Docs",
+      "github": "GitHub",
+      "cta": "Empezar",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú"
+    },
+    "hero": {
+      "title": "Documentación,",
+      "titleAccent": "a tu ritmo.",
+      "subtitle": "Deja tus archivos Markdown en una carpeta y LazyDocs los convierte en una web de documentación rápida y con buscador, con temas, modo oscuro y cinco idiomas. Sin framework que aprender ni backend que mantener.",
+      "ctaPrimary": "Empezar",
+      "ctaSecondary": "Estrella en GitHub",
+      "note": "Gratis y con licencia MIT. Clónalo y es tuyo."
+    },
+    "stats": [
+      {
+        "value": "4",
+        "label": "temas de color, claro y oscuro"
+      },
+      {
+        "value": "5",
+        "label": "idiomas de interfaz"
+      },
+      {
+        "value": "⌘K",
+        "label": "búsqueda difusa, erratas incluidas"
+      },
+      {
+        "value": "0",
+        "label": "servidores ni bases de datos que mantener"
+      }
+    ],
+    "mock": {
+      "aria": "Vista previa de una página de documentación hecha con LazyDocs",
+      "docs": "Docs",
+      "search": "Buscar…",
+      "onThisPage": "En esta página",
+      "breadcrumbs": [
+        "Inicio",
+        "Docs",
+        "Primeros pasos",
+        "Inicio rápido"
+      ],
+      "sections": [
+        {
+          "title": "Primeros pasos",
+          "items": [
+            "Introducción",
+            "Instalación",
+            "Inicio rápido"
+          ]
+        },
+        {
+          "title": "Escritura",
+          "items": [
+            "Markdown",
+            "Frontmatter",
+            "Organizar contenido"
+          ]
+        },
+        {
+          "title": "Personalización",
+          "items": [
+            "Temas",
+            "Modo oscuro",
+            "Logo y marca"
+          ]
+        }
+      ],
+      "title": "Inicio rápido",
+      "description": "Crea tu primera página de documentación en tres minutos.",
+      "heading": "Tu primera página",
+      "paragraphStart": "Crea un archivo Markdown dentro de",
+      "paragraphEnd": "y la barra lateral lo detecta sola.",
+      "paragraph2": "Guarda el archivo y la página ya está publicada. El título, la descripción y las palabras clave salen directamente del frontmatter.",
+      "toc": [
+        "Tu primera página",
+        "Crea un archivo",
+        "Añade frontmatter",
+        "Previsualízalo",
+        "Añade una sección"
+      ]
+    },
+    "how": {
+      "title": "De carpeta a web",
+      "titleAccent": "en tres pasos.",
+      "lead": "Ni CLI que aprender ni archivo de configuración que dominar. Si sabes escribir un README, puedes publicar tu documentación hoy.",
+      "steps": [
+        {
+          "title": "Clónalo",
+          "text": "Descarga el repositorio e instala. El servidor de desarrollo arranca en el puerto 3000 con recarga en caliente."
+        },
+        {
+          "title": "Escribe Markdown",
+          "text": "Añade archivos .md en public/docs/. Las carpetas se convierten en secciones y el frontmatter, en metadatos."
+        },
+        {
+          "title": "Despliega donde quieras",
+          "text": "Una build te da una web estática con su sitemap. Vercel, Netlify o GitHub Pages: todo vale."
+        }
+      ],
+      "ready": "listo",
+      "deployTo": "Despliega en"
+    },
+    "writing": {
+      "title": "Escribe Markdown.",
+      "titleAccent": "Obtén una web de documentación.",
+      "lead": "Todo lo que ya conoces funciona: tablas al estilo GitHub, listas de tareas, imágenes y bloques de código. LazyDocs se encarga de la tipografía, los anclajes y el resaltado.",
+      "points": [
+        {
+          "title": "Frontmatter, no configuración",
+          "text": "Título, descripción, palabras clave y orden van al principio de cada archivo, y alimentan la barra lateral, la búsqueda y las metaetiquetas."
+        },
+        {
+          "title": "Bloques de código que se leen bien",
+          "text": "Resaltado de sintaxis con números de línea y botón de copiar, ajustado a cada tema en claro y en oscuro."
+        },
+        {
+          "title": "Un anclaje para cada título",
+          "text": "Cada título tiene su propio enlace y un hueco en el índice, así que cualquier sección está a un clic."
+        }
+      ],
+      "source": "Fuente",
+      "rendered": "Resultado",
+      "sample": {
+        "title": "Despliegue",
+        "description": "Publica tu documentación en dos comandos.",
+        "intro": "Genera la web y sube la carpeta dist.",
+        "tableCommand": "Comando",
+        "tableWhat": "Qué hace",
+        "rowDev": "Servidor local con recarga en caliente",
+        "rowBuild": "Web estática en dist/",
+        "taskDone": "Escribir la primera página",
+        "taskTodo": "Elegir un tema"
+      }
+    },
+    "navigation": {
+      "title": "Entran carpetas.",
+      "titleAccent": "Sale la navegación.",
+      "lead": "La barra lateral se genera a partir de tus carpetas cada vez que ejecutas dev o build. Mueve un archivo y la navegación lo sigue.",
+      "points": [
+        {
+          "title": "El orden lo decides tú",
+          "text": "Lista las carpetas en _sidebar-order.json y fija el orden en el frontmatter de cada página. El resto se ordena alfabéticamente."
+        },
+        {
+          "title": "Nadie se pierde",
+          "text": "Migas de pan, enlaces a la página anterior y a la siguiente, índice y barra de progreso de lectura en cada página."
+        },
+        {
+          "title": "Nada que sincronizar",
+          "text": "sidebar.json se regenera en cada ejecución, así que nunca se desfasa de los archivos que tienes de verdad."
+        }
+      ],
+      "files": "Tus archivos",
+      "sidebar": "Tu barra lateral",
+      "generated": "generada",
+      "fresh": "nuevo"
+    },
+    "themes": {
+      "title": "Cuatro temas.",
+      "titleAccent": "Todos con su lado oscuro.",
+      "lead": "Elige uno con una sola línea en config.json. Cada tema trae variante clara y oscura con sus propios colores de sintaxis, y el lector pasa de una a otra con un fundido suave.",
+      "pick": "Tema",
+      "mode": "Modo",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "configHint": "Una línea en public/config.json",
+      "custom": "¿Quieres el tuyo? Un tema es un único archivo CSS con tokens de color. Copia uno de src/themes/ y cambia los valores.",
+      "learnMore": "Lee la guía de temas",
+      "names": {
+        "brownie": "Cálido y fiable. El de serie.",
+        "greenleaf": "Verdes frescos y naturales.",
+        "bluewave": "Azules fríos y corporativos.",
+        "panda": "Blanco y negro, sin más."
+      },
+      "fallback": "Tu tema personalizado."
     },
     "features": {
-      "title": "Todo lo que necesitas",
-      "subtitle": "Características modernas para crear la mejor experiencia de documentación",
-      "items": {
-        "docs": {
-          "title": "Documentación Clara",
-          "description": "Organiza tu contenido de forma intuitiva con markdown y MDX."
+      "title": "Los detalles que harías tú.",
+      "titleAccent": "Ya hechos.",
+      "search": {
+        "title": "Una búsqueda que perdona erratas",
+        "text": "Búsqueda difusa de texto completo que se abre con ⌘K. Los títulos pesan más que el cuerpo, y el índice se guarda en caché para que los resultados salgan mientras escribes.",
+        "query": "sidbar",
+        "results": [
+          {
+            "section": "Customization",
+            "title": "Sidebar Organization",
+            "match": "Sidebar"
+          },
+          {
+            "section": "Customization",
+            "title": "Automatic Sidebar Generation",
+            "match": "Sidebar"
+          },
+          {
+            "section": "Advanced",
+            "title": "Enhanced Navigation",
+            "match": ""
+          }
+        ],
+        "navigate": "moverse",
+        "open": "abrir",
+        "close": "cerrar"
+      },
+      "i18n": {
+        "title": "Cinco idiomas, un clic",
+        "text": "La interfaz habla inglés, español, francés, alemán y portugués, y sigue el idioma del navegador. Pruébalo aquí."
+      },
+      "seo": {
+        "title": "Lista para los buscadores",
+        "text": "Metaetiquetas desde el frontmatter, tarjetas de Open Graph y Twitter, JSON-LD y un sitemap generado en cada build.",
+        "resultTitle": "Inicio rápido | Tus Docs",
+        "resultText": "Crea tu primera página de documentación en tres minutos. Escribe Markdown, guarda y listo."
+      },
+      "dark": {
+        "title": "Un modo oscuro con memoria",
+        "text": "Sigue la preferencia del sistema, recuerda lo que elige cada lector y funde un modo con otro en vez de dar un fogonazo."
+      },
+      "code": {
+        "title": "Copiar, pegar y a otra cosa",
+        "text": "Cada bloque de código lleva números de línea y un botón de copiar, para que nadie tenga que seleccionar a mano.",
+        "copied": "¡Copiado!"
+      }
+    },
+    "faq": {
+      "title": "Preguntas,",
+      "titleAccent": "respuestas breves.",
+      "lead": "La versión corta. La larga está en la documentación.",
+      "more": "¿Te quedan dudas?",
+      "moreLink": "Explora la documentación",
+      "items": [
+        {
+          "q": "¿Necesito saber React?",
+          "a": "No. Escribes Markdown y editas un archivo JSON. React solo importa si quieres componentes propios o cambiar el diseño."
         },
-        "fast": {
-          "title": "Súper Rápido",
-          "description": "Navegación instantánea sin recargas de página."
+        {
+          "q": "¿Dónde viven mis páginas?",
+          "a": "En public/docs/. Cada carpeta es una sección de la barra lateral y cada archivo .md, una página en /docs/carpeta/archivo."
         },
-        "syntax": {
-          "title": "Syntax Highlighting",
-          "description": "Bloques de código con colores y resaltado de sintaxis."
+        {
+          "q": "¿Cómo cambio el nombre, el logo o los colores?",
+          "a": "Todo está en public/config.json: el nombre del sitio, los logos para modo claro y oscuro, los enlaces de la navbar y del pie, y el tema de color."
         },
-        "search": {
-          "title": "Búsqueda Potente",
-          "description": "Encuentra cualquier contenido en segundos."
+        {
+          "q": "¿Dónde puedo desplegarlo?",
+          "a": "En cualquier sitio que sirva archivos estáticos y redirija a index.html. El repositorio ya incluye un vercel.json, y el README tiene un botón para desplegar en Vercel con un clic."
         },
-        "themes": {
-          "title": "Temas Personalizables",
-          "description": "Modo claro y oscuro con paletas de colores únicas."
+        {
+          "q": "¿Puedo crear mi propio tema?",
+          "a": "Sí. Copia uno de los archivos de src/themes/, cambia los tokens de color y pon su nombre de archivo como colorTheme en config.json."
         },
-        "i18n": {
-          "title": "Multi-idioma",
-          "description": "Soporte completo para internacionalización."
+        {
+          "q": "¿De verdad es gratis?",
+          "a": "Sí. LazyDocs es código abierto con licencia MIT: úsalo, haz un fork y publícalo en proyectos comerciales."
         }
-      }
+      ]
     },
-    "codePreview": {
-      "title": "Escribe en Markdown",
-      "example": {
-        "heading": "Tu Documentación",
-        "subheading": "Fácil de escribir",
-        "text": "Usa **markdown** para crear contenido ",
-        "highlight": "hermoso",
-        "content": "."
-      }
-    },
-    "cta2": {
-      "title": "¿Listo para empezar?",
-      "subtitle": "Comienza a crear tu documentación en minutos. Es gratis, de código abierto y fácil de personalizar.",
-      "installation": "Ver Instalación",
-      "github": "Ver en GitHub"
+    "cta": {
+      "title": "Tómatelo con calma.",
+      "titleAccent": "Tu documentación no se quejará.",
+      "subtitle": "Clona el repositorio, escribe tu primera página y tenla publicada antes de que se te enfríe el café.",
+      "primary": "Leer la documentación",
+      "secondary": "Ver en GitHub"
     },
     "footer": {
-      "madeWith": "Hecho con ❤️ por",
-      "docs": "Documentación",
-      "github": "GitHub"
-    },
-    "starCta": {
-      "text": "¿Te fue útil?",
-      "action": "Danos una estrella en GitHub",
-      "button": "Lazy Docs"
+      "tagline": "Entra Markdown, sale documentación. Una plataforma de documentación ligera hecha con React y Vite.",
+      "product": "Producto",
+      "project": "Proyecto",
+      "introduction": "Introducción",
+      "quickStart": "Inicio rápido",
+      "themes": "Temas",
+      "search": "Búsqueda",
+      "github": "GitHub",
+      "issues": "Reportar un problema",
+      "license": "Licencia MIT",
+      "madeBy": "Hecho con cariño por",
+      "backToTop": "Volver arriba"
     }
   }
 }

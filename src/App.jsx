@@ -13,7 +13,7 @@ import { LocaleProvider } from "./contexts/LocaleContext";
 import { SidebarProvider, SidebarInset } from "./components/ui/sidebar";
 import { generateSidebarStructure } from "./utils/sidebar";
 import TableOfContents from "@/components/TableOfContents.jsx";
-import Hero from "./components/Hero";
+import Landing from "./components/landing/Landing";
 
 function App() {
   const [content, setContent] = useState("");
@@ -36,10 +36,10 @@ function App() {
   }, [config]);
 
   useEffect(() => {
-    if (config?.siteName) {
+    if (config?.siteName && !isHomePage) {
       document.title = config.siteName || "LazyDocs";
     }
-  }, [config]);
+  }, [config, isHomePage]);
 
   if (!config) {
     return (
@@ -59,10 +59,10 @@ function App() {
               <Route 
                 path="/" 
                 element={
-                  <Hero 
-                    config={config} 
-                    isDark={isDark} 
-                    onToggleDarkMode={toggleDarkMode} 
+                  <Landing
+                    config={config}
+                    isDark={isDark}
+                    onToggleDarkMode={toggleDarkMode}
                   />
                 } 
               />
