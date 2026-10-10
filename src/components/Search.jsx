@@ -5,6 +5,8 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from './ui/dial
 import { cn } from '@/lib/utils';
 import searchIndex from '../utils/search-index';
 
+const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
 function Search({ open, onOpenChange }) {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
@@ -62,7 +64,6 @@ function Search({ open, onOpenChange }) {
         case 'ArrowDown':
           e.preventDefault();
           setSelectedIndex((prev) => Math.min(prev + 1, results.length - 1));
-          navigateToResult(results[selectedIndex]);
           break;
 
         case 'ArrowUp':
@@ -119,11 +120,10 @@ function Search({ open, onOpenChange }) {
   const highlightText = (text, query) => {
     if (!query) return text;
 
-    const regex = new RegExp(`(${query})`, 'gi');
-    const parts = text.split(regex);
+    const parts = text.split(new RegExp(`(${escapeRegExp(query)})`, 'gi'));
 
     return parts.map((part, index) =>
-      regex.test(part) ? (
+      index % 2 === 1 ? (
         <mark key={index} className="bg-primary/20 text-primary font-medium rounded px-0.5">
           {part}
         </mark>
