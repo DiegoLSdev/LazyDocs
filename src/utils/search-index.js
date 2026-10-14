@@ -95,7 +95,8 @@ class SearchIndex {
   async indexFile(path) {
     try {
       const response = await fetch(`${path}.md`);
-      if (!response.ok) return null;
+      const isHtml = response.headers.get('content-type')?.includes('text/html');
+      if (!response.ok || isHtml) return null;
 
       const text = await response.text();
 

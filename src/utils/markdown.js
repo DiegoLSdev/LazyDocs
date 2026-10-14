@@ -3,7 +3,8 @@ import fm from 'front-matter';
 export async function loadMarkdownFile(filePath) {
   try {
     const response = await fetch(filePath);
-    if (!response.ok) {
+    const isHtml = response.headers.get('content-type')?.includes('text/html');
+    if (!response.ok || isHtml) {
       throw new Error(`Failed to load ${filePath}`);
     }
 
