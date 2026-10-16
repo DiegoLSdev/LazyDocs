@@ -9,38 +9,19 @@ function TableOfContents({ content }) {
   const [activeId, setActiveId] = useState('');
 
   useEffect(() => {
-    // Extraer headers del contenido markdown
-    const extractHeadings = () => {
-      const headingRegex = /^(#{1,3})\s+(.+)$/gm;
-      const matches = [];
-      const idCounts = {}; // Track duplicate IDs
-      let match;
-
-      while ((match = headingRegex.exec(content)) !== null) {
-        const level = match[1].length;
-        const text = match[2].trim();
-        let id = text
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, '-')
-          .replace(/(^-|-$)/g, '');
-
-        // Make IDs unique by appending a counter if duplicate
-        if (idCounts[id] !== undefined) {
-          idCounts[id]++;
-          id = `${id}-${idCounts[id]}`;
-        } else {
-          idCounts[id] = 0;
-        }
-
-        matches.push({ level, text, id });
-      }
-
-      setHeadings(matches);
-    };
-
-    if (content) {
-      extractHeadings();
+    if (!content) {
+      setHeadings([]);
+      return;
     }
+
+    const elements = document.querySelectorAll('article h2[id], article h3[id]');
+    setHeadings(
+      Array.from(elements, (element) => ({
+        id: element.id,
+        text: element.textContent,
+        level: Number(element.tagName[1]),
+      }))
+    );
   }, [content]);
 
   useEffect(() => {
