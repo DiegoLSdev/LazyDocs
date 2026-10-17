@@ -17,6 +17,10 @@ async function loadConfig() {
 async function initializeApp() {
   // Load config
   const config = await loadConfig();
+
+  if (config.favicon) {
+    document.querySelector('link[rel="icon"]')?.setAttribute('href', config.favicon);
+  }
   
   // Initialize theme with smooth loading
   await themeManager.initialize(config.colorTheme);
